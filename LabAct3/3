@@ -1,0 +1,25 @@
+public class BunnyEars {
+
+    public static void main(String[] args) throws Exception {
+
+        System.out.println("Ears of the bunnies:" + Bunny_ears(2,4));
+
+    }
+
+        public static int Bunny_ears(int ears, int bunnies){
+
+            if(bunnies == 0){
+
+                return 0;
+
+            }
+
+            return ears + Bunny_ears(ears,bunnies-1);
+
+        }
+
+
+
+
+    }
+    
